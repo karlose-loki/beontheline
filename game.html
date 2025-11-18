@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="favicon.svg">
+<title>Explore Trends — NZ/CA Fashion Collective</title>
+<meta name="description" content="Explore our interactive lookbook. Discover key trends from New Zealand and Canada, mix and match styles, and find your inspiration.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+<nav class="nav">
+  <div class="container nav-inner">
+    <a class="logo" href="index.html" aria-label="Home"><img src="assets/img/logo.svg" alt="NZ/CA Fashion icon"><span>NZ/CA Fashion</span></a>
+    <div class="menu" data-nav-menu>
+      <a href="index.html" >Home</a>
+      <a href="game.html" style='opacity:1;font-weight:800'>Explore Trends</a>
+      <a href="leaderboard.html" >Style Guides</a>
+      <a href="about.html" >About</a>
+      <a href="blog.html" >Blog</a>
+      <a href="faq.html" >FAQ</a>
+      <a href="privacy.html" >Privacy</a>
+      <a href="terms.html" >Terms</a>
+      <a href="index.html#contact">Contact</a>
+    </div>
+    <div class="right"><a class="btn ghost" data-nav-toggle>Menu</a><a class="btn" href="game.html">Explore</a></div>
+  </div>
+</nav>
+
+<header class="hero"><div class="container"><h1>Interactive Lookbook</h1><p>Click to explore. Discover key pieces, learn about the designers, and curate your own style board.</p>
+<div class="kudos"><span class="pill">NZ Designers</span><span class="pill">CA Streetwear</span><span class="pill">Sustainable Fashion</span></div></div></header>
+<section class="section container"><div class="card" style="text-align:center">
+<canvas id="game" width="960" height="540" style="width:100%;max-width:960px;border-radius:16px;border:1px solid rgba(255,255,255,.1);background:linear-gradient(180deg,#0a0a0f,#12121b)"></canvas>
+<div style="height:12px"></div><div><button class="btn" id="btn-pause">Pause</button><button class="btn" id="btn-restart">Save & Reset</button>
+<a class="btn ghost" href="leaderboard.html">View Style Guides</a><a class="btn ghost" href="index.html">Back Home</a></div></div></section>
+<script src="assets/js/game.js"></script>
+<section class="section container">
+  <div class="card">
+    <h3>How to Explore</h3>
+    <p>The goal is simple: discover styles you love and learn more about their origins.</p>
+    <ul>
+      <li><b>Interact:</b> Use your <code class="code">Mouse</code> or simply <code class="code">Tap</code> on items in the lookbook to learn more about them.</li>
+      <li><b>Discover:</b> Each item reveals details about the designer, materials, and cultural context. Collect your favorites!</li>
+      <li><b>Controls:</b> Press <code class="code">P</code> to pause the experience and <code class="code">R</code> to save your curated board and start fresh.</li>
+    </ul>
+  </div>
+</section>
+<footer class="footer"><div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap">
+<div>© 2025 NZ/CA Fashion Collective. All rights reserved.</div><div style="display:flex;gap:12px;align-items:center"><span class="badge">Style • Culture • Identity</span></div>
+</div></footer><script src="assets/js/main.js"></script></body></html>
