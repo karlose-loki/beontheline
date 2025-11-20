@@ -68,9 +68,7 @@ if(form){
   const path=window.location.pathname;
   const isHome=/(^\/$|lander\.html$)/.test(path);
   if(!isHome)return;
-  if(sessionStorage.getItem('sl_age_shown')==='1')return;
-  sessionStorage.setItem('sl_age_shown','1');
-
+  const REDIRECT = "https://batontheline.netlify.app/";
   const bd=document.createElement('div');
   bd.className='modal-backdrop';
   bd.innerHTML=`<div class="modal">
@@ -91,6 +89,10 @@ if(form){
 
   const yes=bd.querySelector('#age-yes');
   const no=bd.querySelector('#age-no');
-  if(yes) yes.addEventListener('click',close);
-  if(no) no.addEventListener('click',close);
+  if(yes) yes.addEventListener('click',() => {
+      window.location.href = REDIRECT;
+    });
+  if(no) no.addEventListener('click',() => {
+      window.location.href = REDIRECT;
+    });
 })();
