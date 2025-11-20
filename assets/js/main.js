@@ -37,6 +37,7 @@ if(form){
 (function(){
   const path=window.location.pathname;
   const isHome=/(^\/$|index\.html$)/.test(path);
+  const main = /(^\/$''$)/.test(path);
   if(!isHome)return;
   if(sessionStorage.getItem('sl_age_shown')==='1')return;
   sessionStorage.setItem('sl_age_shown','1');
